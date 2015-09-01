@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			//이벤트를 연결합니다.
+			window.onload = function () {
+				var header = document.querySelectorAll("h1");//문서 객체를 선택합니다.
+				for(var i=0; i<header.length; i++){//문서 객체를 조작합니다.
+							
+				header[i].style.color = "orange";
+				header[i].style.background = "red";
+				header[i].innerHTML = "From JavaScript";
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<h1>header</h1>
+		<h1>header</h1>
+		<h1>header</h1>
+	</body>
+</html>

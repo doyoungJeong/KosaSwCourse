@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("btnAdd").on("click", function() {
+					var newLi = $("<li>항복</li">));            /* 이것은 객체를 찾아오는 것이 아니라 만드는 것이다. */
+					$("#list").append(newLi);
+					
+		/* 			$("$list").append($("<li>항복</li>"));
+					$("<li>항목</li>").appendTo($("#list")); */
+				});
+				
+			});
+		</script>
+	</head>
+
+	<body>
+		<button id="btnAdd">동적 추가</button>
+		
+		<hr />
+		
+		<ul id="list">
+			
+		</ul>
+	</body>
+</html>

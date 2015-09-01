@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	/* $("#link1").on("click", function(){}); */
+
+	$(function() {
+		var link1 = document.querySelector("#link1");
+		link1.onclick = function(event) {
+			event = event | window.event; // event가 null이거나 0이면 window의 event를 사용한다.
+			
+			console.log(event);
+			return false;
+		}
+
+		$("#link2").click(function(event) { // jquery가 포장된 event객체는 반드시 들어온다.
+			console.log(event);
+			event.preventDefault();
+			});
+			// return false와 같음.
+		/* 	return false; */
+			//how1
+			/* 	console.log("link2-click");
+				return false; // 핸들러가 가지고 있는 기능이 동작하지 않도록한다. */
+
+		
+
+	});
+</script>
+</head>
+
+<body>
+	<!--  jquery객체로 이벤트 처리 -->
+	<a id="link1" href="http://www.naver.com">네이버</a>
+
+	<!-- dom객체로 이벤트 처리 -->
+	<a id="link2" href="http://www.naver.com">네이버</a>
+</body>
+</html>

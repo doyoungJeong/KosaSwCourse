@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			//객체 생성
+			//객체의 생성번지가 member에 대입
+			var member = {
+					id : "winter",
+					name : "도영2",
+					age : "25",
+					
+					getId: function() { return this.id; },
+					setId: function(id) { this.id = id; }
+			};
+			//객체 사용
+			console.log(member.id);
+			member.id = "summer";
+			console.log(member.id);
+			console.log(member.getId());
+			member.setId("fall");
+			console.log(member.getId());
+		</script>
+	</head>
+
+	<body>
+		
+	</body>
+</html>

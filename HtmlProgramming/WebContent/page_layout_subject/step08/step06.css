@@ -1,0 +1,11 @@
+#main-section {
+	float: left;
+	width: 630px;
+	height: 500px;
+}
+#main-aside {
+	float: right;
+	width: 200px;
+	height: 500px;
+	border-left: 1px solid #c8c8c8;
+}

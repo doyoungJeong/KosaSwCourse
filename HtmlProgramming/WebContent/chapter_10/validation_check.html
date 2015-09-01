@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#joinForm").submit(function(event) {
+			var value = $("#userName").val()
+			if(value == ""){
+				alert("입력을 하세용!");
+				//return false;
+				event.preventDefault();
+			} else if( value.replace(/[가~힣]/g, '').length != 0 ) {// 한글을 만나면 한글을 지운다.
+				alert("한글을 입력 하세용!");
+				
+				return false;
+			}
+		});
+	});
+	/* 			var joinForm = document.joinForm;
+			var userName = document.joinForm.userName;
+			
+			joinForm.onsubmit = function() {
+				if(userName.value == ""){
+					alert("입력을 하세용!");
+					return false;
+					event.preventDefault();					
+				}
+			};
+			
+		});
+	 */
+	/* 	function fun1() { form태그의 속성에 onsubmit를 주었을 때는 이 방식을 사용
+			
+		} */
+</script>
+</head>
+
+<body>
+	<form id="joinForm" name="joinForm" method="get" action="#">
+		<!-- 둘 다 디폴트 -->
+		<label>이름</label> <input id="userName" name="userName" type="text"
+			value="" /> <input type="submit" />
+	</form>
+</body>
+</html>

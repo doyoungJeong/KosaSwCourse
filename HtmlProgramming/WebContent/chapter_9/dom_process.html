@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>일찍 일어나!</title>
+		<script type="text/javascript">
+			function fun1() { 
+				//html 에서 추가된 방식
+				var h2array = document.querySelectorAll("h2");
+				//이전방식
+				/* var h2Array = document.getElementsByTagName("h2"); */
+				
+				for(var i=0; i<h2array.length; i++){
+				h2array[i].style.backgroundColor ="#ff0000";
+				}
+			}
+			function fun2() {
+				//html 에서 추가된 방식
+				var h2 = document.querySelector("#process1");
+				//이전방식
+		 		/*var h2 = document.getElementById("process1"); */
+				h2.style.backgroundColor ="#ff0000";
+			}
+			function fun3() { 
+				var h2array = document.querySelectorAll(".process2");
+				
+				for(var i=0; i<h2array.length; i++){
+					h2array[i].style.backgroundColor ="#ff0000";
+				}
+			}
+			function fun4() {
+				var h2array = document.querySelectorAll("h2");
+				for(var i=0; i<h2array.length; i++){
+					h2array[i].style.backgroundColor ="#ffffff";
+					}
+			}
+		</script>
+	</head>
+
+	<body>
+		<h2 id="process1">Process - 1</h2>
+		<h2 class="process2">Process - 2</h2>
+		<h2 class="process2">Process - 2</h2>
+		<hr />
+		<button onclick="fun1()">태그명으로 찾기</button>
+		<button onclick="fun2()">id로 찾기</button>
+		<button onclick="fun3()">class로 찾기</button>
+		<button onclick="fun4()">초기화</button>
+	</body>
+</html>

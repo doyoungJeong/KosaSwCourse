@@ -1,0 +1,46 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+#parent {
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+}
+body {
+	width :100%;
+}
+#top {
+	width :100%;
+	background-color: #c8c8c8;
+	text-align: center;
+	height: 50px;
+}
+#center {
+	display: flex;
+	height: 100%;
+	flex: 10;
+	text-align: center;
+	overflow: 	
+}
+#left {
+	background-color: aqua;
+	width:50px;
+	text-align: center;
+}
+#c {
+	background-color: white;
+	flex: 3;
+	overflow-y: scroll;	
+	text-align: center;
+}
+#right {
+	background-color: aqua;
+	width:50px;
+	text-align: center;
+}
+#bottom {
+	background-color: #c8c8c8;
+	height: 50px;
+	text-align: center;
+}

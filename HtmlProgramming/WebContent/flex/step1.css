@@ -1,0 +1,35 @@
+body {
+	width: 960px;
+	background-color: #c8c8c8;
+	margin: 0px auto;
+}
+#main_div {
+	background-color: white;
+	margin: 40px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	box-shadow: 0px 2px 6px rgba(100,100,100,0.3);
+}
+#header {
+	height:100px;
+	border-bottom: 1px solid #c8c8c8;
+}
+.hanbit {
+	font-size: 16px;
+	margin-top: 0;
+	font-style: none;
+}
+.htmlexample {
+	margin-bottom: 0;
+}
+.menu {
+	display: flex;
+	flex-direction: row;
+}
+.menu > #menu {
+	margin: 10px 10px;
+}
+.menu > #menu2 {
+	margin-top: 10px;
+	text-align: right;
+}
